@@ -1,0 +1,45 @@
+#container {
+  width: 1050px;
+  background-color: rgb(228, 235, 238);
+  border: 1px solid grey;
+  /* height: 100px; */
+  margin: 0 auto;
+}
+h1 a {
+  font-size: 40px;
+  font-weight: 100px;
+  color: rgb(94, 94, 190);
+  text-decoration: none;
+}
+#header {
+  height: 200px;
+  padding: 10px 0;
+}
+#brand {
+  float: left;
+}
+#searchbox {
+  float: right;
+  background: linear-gradient(lightblue, white);
+  width: 400px;
+  height: 50px;
+  padding: 10px 10px 0 10px;
+  margin-top: 20px;
+}
+.text {
+  float: left;
+  width: 240px;
+  padding: 5px;
+  font-size: 15px;
+  color: blue;
+}
+.submit {
+  padding: 5px;
+  font-size: 15px;
+  background: blue;
+  font-weight: bold;
+  color: white;
+}
+.clear {
+  clear: both;
+}
