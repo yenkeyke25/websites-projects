@@ -1,7 +1,7 @@
 #container {
   width: 1050px;
-  background-color: rgb(228, 235, 238);
-  border: 1px solid grey;
+  /* background-color: rgb(228, 235, 238); */
+  /* border: 1px solid grey; */
   /* height: 100px; */
   margin: 0 auto;
 }
@@ -42,4 +42,112 @@ h1 a {
 }
 .clear {
   clear: both;
+}
+#menu {
+  height: 70px;
+  background: linear-gradient(lightblue, rgb(113, 113, 153));
+  padding: 5px 0;
+}
+ul {
+  list-style: none;
+}
+#menu ul li {
+  float: left;
+  padding: 0 30px;
+  height: 30px;
+  border-right: 1px solid blueviolet;
+}
+#menu ul li:last-child {
+  border-right: none;
+}
+#menu ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: blueviolet;
+  line-height: 30px;
+  transition: font-size 0.3s ease;
+  -webkit-transition: font-size 0.3s ease;
+  -moz-transition: font-size 0.3s ease;
+  -o-transition: font-size 0.3s ease;
+  -ms-transition: font-size 0.3s ease;
+}
+#menu ul li a:hover,
+#menu ul li a.active {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(98, 73, 143);
+}
+#introduction {
+  background: linear-gradient(lightgreen, white);
+  padding: 30px;
+  margin: 15px 0;
+}
+#introduction h3 {
+  font-size: 40px;
+  color: rgb(153, 197, 238);
+  font-weight: normal;
+}
+#introduction p {
+  font-size: 20px;
+  color: rgb(158, 191, 235);
+  font-weight: normal;
+  text-align: justify;
+}
+.sidebar {
+  height: 450px;
+  width: 450px;
+  border-radius: 20px;
+  padding: 10px 30px;
+}
+.sidebar h3 {
+  color: blueviolet;
+  font-size: 30px;
+}
+.sidebar ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: blueviolet;
+  transition: font-size 0.3s ease;
+  -webkit-transition: font-size 0.3s ease;
+  -moz-transition: font-size 0.3s ease;
+  -o-transition: font-size 0.3s ease;
+  -ms-transition: font-size 0.3s ease;
+}
+#leftsidebar ul li {
+  padding-bottom: 5px;
+}
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  text-decoration: none;
+  color: blueviolet;
+  font-size: 23px;
+  font-weight: bold;
+}
+#leftsidebar {
+  float: left;
+  border: 1px solid blueviolet;
+}
+#rightsidebar {
+  float: right;
+  border: 1px solid blueviolet;
+}
+#rigthsidebar ul li {
+  padding-bottom: 20px;
+}
+.far {
+  font-size: 24px;
+  padding-right: 10px;
+  color: blueviolet;
+}
+.fa {
+  padding-right: 10px;
+  font-size: 24px;
+  color: lightgreen;
+}
+.footer {
+  height: 60px;
+  background: linear-gradient(lightblue, rgb(113, 113, 153));
+  padding: 10px 30px;
+  margin-top: 30px;
 }
