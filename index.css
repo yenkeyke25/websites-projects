@@ -4,6 +4,7 @@
   /* border: 1px solid grey; */
   /* height: 100px; */
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 h1 a {
   font-size: 40px;
@@ -150,4 +151,8 @@ ul {
   background: linear-gradient(lightblue, rgb(113, 113, 153));
   padding: 10px 30px;
   margin-top: 30px;
+}
+body {
+  font: Arial, helvetica, sans-serif;
+  display: flex;
 }
