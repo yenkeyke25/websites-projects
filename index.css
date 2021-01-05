@@ -1,5 +1,5 @@
 #container {
-  width: 1050px;
+  width: 65%;
   /* background-color: rgb(228, 235, 238); */
   /* border: 1px solid grey; */
   /* height: 100px; */
@@ -13,19 +13,27 @@ h1 a {
   text-decoration: none;
 }
 #header {
-  height: 200px;
+  /* height: 200px; */
   padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 #brand {
-  float: left;
+  /* float: left; */
+  flex: 50%;
+  min-width: 600px;
 }
 #searchbox {
-  float: right;
+  /* float: right; */
+  flex: 50%;
   background: linear-gradient(lightblue, white);
-  width: 400px;
-  height: 50px;
-  padding: 10px 10px 0 10px;
-  margin-top: 20px;
+  min-width: 400px;
+  /* height: 50px; */
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .text {
   float: left;
@@ -45,23 +53,35 @@ h1 a {
   clear: both;
 }
 #menu {
-  height: 70px;
+  /* height: 70px; */
   background: linear-gradient(lightblue, rgb(113, 113, 153));
   padding: 5px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 ul {
   list-style: none;
 }
-#menu ul li {
-  float: left;
+#menu a {
+  /* float: left; */
   padding: 0 30px;
   height: 30px;
   border-right: 1px solid blueviolet;
 }
-#menu ul li:last-child {
+/* #menu ul li:last-child {
   border-right: none;
+} */
+/* small screen vertical menu */
+@media screen and (max-width: 700px) {
+  #menu {
+    flex-direction: column;
+    align-content: center;
+  }
+  #menu a {
+    border-right: none;
+  }
 }
-#menu ul li a {
+#menu a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 17px;
@@ -73,8 +93,8 @@ ul {
   -o-transition: font-size 0.3s ease;
   -ms-transition: font-size 0.3s ease;
 }
-#menu ul li a:hover,
-#menu ul li a.active {
+#menu a:hover,
+#menu a.active {
   font-size: 20px;
   font-weight: bold;
   color: rgb(98, 73, 143);
@@ -95,11 +115,21 @@ ul {
   font-weight: normal;
   text-align: justify;
 }
+.sidebars {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.sidebarwrapper {
+  flex: 50%;
+  padding: 10px;
+}
 .sidebar {
-  height: 450px;
-  width: 450px;
+  height: 100%;
+  width: 100%;
   border-radius: 20px;
   padding: 10px 30px;
+  /* flex: 50%; */
 }
 .sidebar h3 {
   color: blueviolet;
@@ -126,11 +156,11 @@ ul {
   font-weight: bold;
 }
 #leftsidebar {
-  float: left;
+  /* float: left; */
   border: 1px solid blueviolet;
 }
 #rightsidebar {
-  float: right;
+  /* float: right; */
   border: 1px solid blueviolet;
 }
 #rigthsidebar ul li {
@@ -155,4 +185,9 @@ ul {
 body {
   font: Arial, helvetica, sans-serif;
   display: flex;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
 }
